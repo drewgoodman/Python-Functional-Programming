@@ -44,3 +44,9 @@ pprint(tuple(filter(nobel_filter, scientists)))
 
 # [x for x in scientists if x.nobel is True] - pythonic version of above code
 pprint(tuple([x for x in scientists if x.nobel is True]))
+
+# tuple ([1,2,3])
+# (1,2,3)
+
+print("Birthday more recent than 1900")
+pprint(tuple([x for x in scientists if x.born >= 1900]))
